@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- SEO Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A sample webpage demonstrating HTML5 semantic structure with accessibility and SEO best practices">
+    <meta name="keywords" content="HTML5, semantic HTML, accessibility, SEO, web development">
+    <meta name="author" content="Your Name">
+    <title>HTML5 Semantic Page | Accessibility & SEO Basics</title>
+    
+    <!-- Accessibility: Helps prevent browsers from unexpectedly synthesizing speech -->
+    <meta name="speech" content="none">
+</head>
+<body>
+    <!-- Skip to Content Link for Keyboard Users -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- Semantic Header -->
+    <header role="banner">
+        <h1>HTML5 Semantic Page</h1>
+        <p>Demonstrating Accessibility & SEO Best Practices</p>
+        
+        <!-- Semantic Navigation -->
+        <nav role="navigation" aria-label="Main navigation">
+            <h2 class="visually-hidden">Main Navigation</h2>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="main-content" role="main">
+        <!-- About Section -->
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Our Company</h2>
+            <article>
+                <h3>Our History</h3>
+                <p>Founded in 2023, our company specializes in creating accessible, SEO-friendly websites using modern HTML5 standards.</p>
+            </article>
+            <article>
+                <h3>Our Mission</h3>
+                <p>To make the web more inclusive and discoverable through semantic markup and best practices.</p>
+            </article>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" aria-labelledby="services-heading">
+            <h2 id="services-heading">Our Services</h2>
+            <article>
+                <h3>Web Development</h3>
+                <p>We build websites using semantic HTML5 structure for better accessibility and SEO.</p>
+            </article>
+            <article>
+                <h3>Accessibility Audits</h3>
+                <p>We evaluate your website against WCAG guidelines to ensure it's usable by everyone.</p>
+            </article>
+            <article>
+                <h3>SEO Optimization</h3>
+                <p>We help improve your website's visibility in search engine results through on-page techniques.</p>
+            </article>
+        </section>
+
+        <!-- Additional Content Section -->
+        <section aria-labelledby="resources-heading">
+            <h2 id="resources-heading">Resources</h2>
+            <aside>
+                <h3>Related Links</h3>
+                <ul>
+                    <li><a href="https://www.w3.org/WAI/" aria-label="Web Accessibility Initiative">WAI</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" aria-label="MDN HTML Documentation">MDN HTML</a></li>
+                    <li><a href="https://developers.google.com/search/docs" aria-label="Google Search Documentation">Google SEO Docs</a></li>
+                </ul>
+            </aside>
+        </section>
+    </main>
+
+    <!-- Contact Section -->
+    <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact Us</h2>
+        <address>
+            <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">(123) 456-7890</a></p>
+        </address>
+    </section>
+
+    <!-- Semantic Footer -->
+    <footer role="contentinfo">
+        <h2 class="visually-hidden">Footer Information</h2>
+        <p>&copy; 2023 HTML5 Semantic Page. All rights reserved.</p>
+        <p><a href="/privacy">Privacy Policy</a> | <a href="/accessibility">Accessibility Statement</a></p>
+        
+        <!-- Last updated for SEO -->
+        <p>Last updated: <time datetime="2023-11-15">November 15, 2023</time></p>
+    </footer>
+</body>
+</html>
